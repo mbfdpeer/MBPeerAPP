@@ -345,8 +345,16 @@
       justify-content: center; gap: 5px; padding: 10px 14px;
       font-size: 12px; font-weight: 800; color: #fff;
       background: var(--red); border: 2px solid var(--red-dark);
-      white-space: nowrap;
+      white-space: nowrap; text-decoration: none;
+      box-sizing: border-box;
     }
+
+    .fr-actions {
+      display: flex; flex-direction: column; gap: 6px;
+      width: 86px; flex: 0 0 auto;
+    }
+
+    .fr-actions .fr-call { width: 100%; }
 
     /* ─── Stat bar ───────────────────────────────────────────────── */
     .stat-bar { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); margin-top: 14px; }
@@ -427,6 +435,7 @@
       .team-btn { width: 100%; justify-content: center; }
       .fr-entry { flex-direction: column; align-items: flex-start; }
       .fr-call { width: 100%; justify-content: center; }
+      .fr-actions { width: 100%; }
     }
   </style>
 </head>
@@ -870,7 +879,7 @@
             <span class="fr-name">FHE Health</span>
             <span class="fr-note">Shatterproof Program &middot; 505 S Federal Hwy #2, Deerfield Beach, FL 33441 &middot; Open 24 hours &middot; (866) 584-3586 &middot; fherehab.com</span>
           </div>
-          <div style="display:flex; flex-direction:column; gap:6px; flex:0 0 auto;">
+          <div class="fr-actions">
             <a class="fr-call" href="tel:8665843586">&#128222; Call</a>
             <a class="fr-call" href="https://fherehab.com/" target="_blank" rel="noopener" style="background:var(--blue); border-color:var(--blue-deep);">&#8599; Website</a>
           </div>
