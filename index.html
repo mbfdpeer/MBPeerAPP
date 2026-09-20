@@ -312,6 +312,21 @@
       color: var(--red); white-space: nowrap;
     }
 
+    .resource-actions {
+      display: flex; flex-direction: column; gap: 5px;
+      flex: 0 0 auto;
+    }
+
+    .resource-action {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 6px 9px; border: 1px solid var(--border);
+      font-size: 10px; font-weight: 800; text-decoration: none;
+      white-space: nowrap; box-sizing: border-box;
+    }
+
+    .resource-action-call { color: var(--red); background: #fff; }
+    .resource-action-web { color: #fff; background: var(--blue); border-color: var(--blue-deep); }
+
     /* ─── First Responder priority programs ──────────────────────── */
     .fr-stack { display: grid; gap: 8px; margin-top: 12px; }
 
@@ -864,14 +879,17 @@
       <p>These programs are specifically designed or designated for first responders — not general public programs adapted for you. Your CISM peer can connect you, or you can call directly.</p>
       <div class="fr-stack">
 
-        <a class="fr-entry" href="tel:3053749990">
+        <div class="fr-entry">
           <div class="fr-entry-info">
             <span class="fr-tag">Free for First Responders</span>
             <span class="fr-name">Trauma Resolution Center</span>
             <span class="fr-note">Network of therapists &middot; 4343 W Flagler St, Suite 503, Miami &middot; 305-374-9990</span>
           </div>
-          <span class="fr-call">&#128222; Call</span>
-        </a>
+          <div class="fr-actions">
+            <a class="fr-call" href="tel:3053749990">&#128222; Call</a>
+            <a class="fr-call" href="https://www.traumaresolutioncenter.net/" target="_blank" rel="noopener" style="background:var(--blue); border-color:var(--blue-deep);">&#8599; Website</a>
+          </div>
+        </div>
 
         <div class="fr-entry">
           <div class="fr-entry-info">
@@ -885,14 +903,17 @@
           </div>
         </div>
 
-        <a class="fr-entry" href="tel:8889192619">
+        <div class="fr-entry">
           <div class="fr-entry-info">
             <span class="fr-tag">First Responders Only</span>
             <span class="fr-name">Transformations Treatment Center</span>
             <span class="fr-note">Freedom Now Program &middot; 14000 Military Trail, Dania Beach &middot; 888-919-2619</span>
           </div>
-          <span class="fr-call">&#128222; Call</span>
-        </a>
+          <div class="fr-actions">
+            <a class="fr-call" href="tel:8889192619">&#128222; Call</a>
+            <a class="fr-call" href="https://transformationstreatment.center/" target="_blank" rel="noopener" style="background:var(--blue); border-color:var(--blue-deep);">&#8599; Website</a>
+          </div>
+        </div>
 
       </div>
     </article>
@@ -921,13 +942,16 @@
           <span class="resource-dial">&#128222; 786-873-7158</span>
         </a>
 
-        <a class="resource-row" href="tel:7867492275">
+        <div class="resource-row">
           <span class="resource-info">
             <span class="resource-name">Martha Fonseca, LCSW</span>
             <span class="resource-spec">H.E.A.L. Psychotherapy LLC</span>
           </span>
-          <span class="resource-dial">&#128222; 786-749-2275</span>
-        </a>
+          <span class="resource-actions">
+            <a class="resource-action resource-action-call" href="tel:7867492275">&#128222; Call</a>
+            <a class="resource-action resource-action-web" href="https://www.heal-psychotherapyservices.com/martha-fonseca" target="_blank" rel="noopener">&#8599; Website</a>
+          </span>
+        </div>
 
         <a class="resource-row" href="tel:3057886296">
           <span class="resource-info">
@@ -937,13 +961,16 @@
           <span class="resource-dial">&#128222; 305-788-6296</span>
         </a>
 
-        <a class="resource-row" href="tel:3059293428">
+        <div class="resource-row">
           <span class="resource-info">
             <span class="resource-name">Elsa Orlandini, Psy.D</span>
             <span class="resource-spec">Individual &middot; Group &middot; Family</span>
           </span>
-          <span class="resource-dial">&#128222; 305-929-3428</span>
-        </a>
+          <span class="resource-actions">
+            <a class="resource-action resource-action-call" href="tel:3059293428">&#128222; Call</a>
+            <a class="resource-action resource-action-web" href="https://miamipsychology.com/our-team/" target="_blank" rel="noopener">&#8599; Website</a>
+          </span>
+        </div>
 
         <a class="resource-row" href="tel:3052441940">
           <span class="resource-info">
@@ -1051,13 +1078,16 @@
           <span class="resource-dial">&#128222; 305-596-1160</span>
         </a>
 
-        <a class="resource-row" href="tel:8889885438">
+        <div class="resource-row">
           <span class="resource-info">
             <span class="resource-name">Children's Bereavement Center</span>
             <span class="resource-spec">Children, adolescents &middot; Adult grief groups (loss of child)</span>
           </span>
-          <span class="resource-dial">&#128222; 888-988-5438</span>
-        </a>
+          <span class="resource-actions">
+            <a class="resource-action resource-action-call" href="tel:8889885438">&#128222; Call</a>
+            <a class="resource-action resource-action-web" href="https://childbereavement.org/" target="_blank" rel="noopener">&#8599; Website</a>
+          </span>
+        </div>
 
         <a class="resource-row" href="tel:7866647810">
           <span class="resource-info">
@@ -1067,13 +1097,16 @@
           <span class="resource-dial">&#128222; 786-664-7810</span>
         </a>
 
-        <a class="resource-row" href="tel:8888809270">
+        <div class="resource-row">
           <span class="resource-info">
             <span class="resource-name">Butterfly Effects</span>
             <span class="resource-spec">ABA therapy &middot; Autism spectrum &middot; Deerfield Beach</span>
           </span>
-          <span class="resource-dial">&#128222; 888-880-9270</span>
-        </a>
+          <span class="resource-actions">
+            <a class="resource-action resource-action-call" href="tel:8888809270">&#128222; Call</a>
+            <a class="resource-action resource-action-web" href="https://butterflyeffects.com/lp/deerfield-beach/" target="_blank" rel="noopener">&#8599; Website</a>
+          </span>
+        </div>
 
       </div>
     </article>
